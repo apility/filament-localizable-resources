@@ -59,7 +59,11 @@ trait HasLocalizableResourceLabels
     {
         return static::translatedLabel(
             label: static::NAVIGATION_LABEL,
-            fallback: parent::getNavigationLabel(),
+            fallback: static::translatedLabel(
+                label: static::MODEL_LABEL,
+                fallback: parent::getSlug(),
+                plural: true
+            )
         );
     }
 
@@ -67,7 +71,11 @@ trait HasLocalizableResourceLabels
     {
         return static::translatedLabel(
             label: static::SLUG,
-            fallback: parent::getSlug(),
+            fallback: static::translatedLabel(
+                label: static::MODEL_LABEL,
+                fallback: parent::getSlug(),
+                plural: true
+            )
         );
     }
 }
