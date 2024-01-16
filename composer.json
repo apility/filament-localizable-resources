@@ -1,0 +1,48 @@
+{
+    "name": "apility/filament-localizable-resources",
+    "description": "This package provides a re-usable trait for Filament Resources which adds support for localizing the resource labels.",
+    "keywords": [
+        "laravel",
+        "filament"
+    ],
+    "homepage": "https://github.com/apility/filament-localizable-resources",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Alrek",
+            "email": "thomas@apility.no",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "spatie/laravel-package-tools": "^1.14.0",
+        "illuminate/contracts": "^10.0",
+        "illuminate/support": "^10.0"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apility\\Filament\\": "src/"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
