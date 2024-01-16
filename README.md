@@ -1,8 +1,7 @@
 # Filament Localizable Resources
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/apility/filament-localizable-resources.svg?style=flat-square)](https://packagist.org/packages/apility/filament-localizable-resources)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/apility/filament-localizable-resources/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/apility/filament-localizable-resources/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/apility/filament-localizable-resources/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/apility/filament-localizable-resources/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/apility/filament-localizable-resources/phpstan.yml?branch=master&label=tests&style=flat-square)](https://github.com/apility/filament-localizable-resources/actions?query=workflow%3Aphpstan+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/apility/filament-localizable-resources.svg?style=flat-square)](https://packagist.org/packages/apility/filament-localizable-resources)
 
 This package provides a re-usable trait for Filament Resources which adds support for localizing the resource labels.
