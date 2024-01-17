@@ -69,12 +69,14 @@ trait HasLocalizableResourceLabels
 
     public static function getSlug(): string
     {
-        return static::translatedLabel(
-            label: static::SLUG,
-            fallback: static::translatedLabel(
-                label: static::MODEL_LABEL,
-                fallback: parent::getSlug(),
-                plural: true
+        return Str::slug(
+            static::translatedLabel(
+                label: static::SLUG,
+                fallback: static::translatedLabel(
+                    label: static::MODEL_LABEL,
+                    fallback: parent::getSlug(),
+                    plural: true
+                )
             )
         );
     }
