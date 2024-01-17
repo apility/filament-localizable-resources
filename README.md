@@ -36,13 +36,14 @@ The trait modifies the default methods for retrieving the resource labels to use
 
 It will look for the translation key in the following format:
 
+lang/`<locale>`/resources.php
 ```php
 return [
     // The resource slug is used as the translation key
     'articles' => [
         'model_label' => 'article|articles',
         'navigation_label' => 'Articles', // Optional, defaults to model_label
-        'slug' => 'articles', // Optional, defaults to resource slug
+        'slug' => 'articles', // Optional, will use model_label as fallback
     ],
 ];
 ```
